@@ -9,7 +9,7 @@ while True:
         print('You ran out of guesses')
         break
     
-    if len(guess) > 3:
+    if len(guess) > 3 or not guess.isdecimal():
             print('DO YOU NOT UNDERSTAND WHAT A 3 DIGIT NUMBER IS YOU FUCKING MORON?!')
             guess_count-=1
             continue
