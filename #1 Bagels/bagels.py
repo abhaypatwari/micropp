@@ -2,7 +2,7 @@ print("I am thinking of a 3-digit number. Try to guess what it is.\nHere are som
 match = '420'
 guess_count=0
 while True:
-    print('Guess #',guess_count+1)
+    print('Guess #{}'.format(guess_count+1))
     guess = input()
     guess_count +=1
     if guess_count==10:
