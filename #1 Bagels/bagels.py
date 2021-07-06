@@ -1,6 +1,17 @@
+import random
+def getmatch():
+    num = random.randint(0,999)
+    if num <= 9:
+        return '00'+str(num)
+    if num >= 10 and num <=99:
+        return '0'+str(num)
+
+    return str(num)
+
 print("I am thinking of a 3-digit number. Try to guess what it is.\nHere are some clues:\nWhen I say:\tThat means:\n  Pico \t\tOne digit is correct but in the wrong position.\n  Fermi \tOne digit is correct and in the right position.\n  Bagels \tNo digit is correct.\nI have thought up a number.\nYou have 10 guesses to get it.")
-match = '420'
+match = getmatch()
 guess_count=0
+
 while True:
     print('Guess #{}'.format(guess_count+1))
     guess = input()
