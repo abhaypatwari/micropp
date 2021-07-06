@@ -14,7 +14,7 @@ guess_count=0
 
 while True:
     print('Guess #{}'.format(guess_count+1))
-    guess = input()
+    guess = input('> ')
     guess_count +=1
     if guess_count==10:
         print('You ran out of guesses')
@@ -26,7 +26,7 @@ while True:
             continue
             
     if guess == match:
-        print('You got it!\nnow fuck off!')
+        print('Congratulations! You got it!')
         break
 
     i=0
@@ -35,7 +35,6 @@ while True:
         if guess[i]==match[i]:
             fermi_flag=1
             print('Fermi')
-            break
 
     j=0
     k=0
