@@ -36,5 +36,5 @@ while True:
     print('DVD')
     x_init = x
     y_init = y
-    time.sleep(0.01)
+    time.sleep(0.05)
     clear()
