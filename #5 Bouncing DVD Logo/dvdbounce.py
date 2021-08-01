@@ -6,7 +6,6 @@ import os
 def clear():
         _ = os.system('cls')
 
-
 dim = bext.size()
 width = dim[0]
 height = dim[1]
@@ -39,4 +38,3 @@ while True:
     y_init = y
     time.sleep(0.01)
     clear()
-
